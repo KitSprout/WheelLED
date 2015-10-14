@@ -2,10 +2,11 @@
 ========
 * Author  : [Hom](https://about.me/Hom)
 * Version : v1.2
-* Update  : 2015/08/26
+* Update  : 2015/10/15
 
 Description
 ========
+WheelLED 是一個自行車的照明系統，其分成三部分，第一部分 WheelLED-Light，負責控制 LED 亮度角度等資訊，第二部分 WheelLED-Core，用來計算角度、速度等資訊來控制 WheelLED-Light，實現定向照明的效果，第三部分 WheelLED-Wearable，用來體感控制車燈的照明亮度、角度、範圍。
 
 
 License
@@ -19,20 +20,26 @@ License
 
 Hardware
 ========
-* 控制器　 : STM32F031F 20Pin 48MHz  
+* 控制器　 : 
 * 設計軟體 [Altium Designer 15](http://www.altium.com/en/products/altium-designer)  
 
 Related Documents
 ========
 
+
 Software
 ========
+[WheelLED-Core](https://github.com/KitSprout/WheelLED/tree/master/Software/WheelLED-Core)  
+[WheelLED-Light](https://github.com/KitSprout/WheelLED/tree/master/Software/WheelLED-Light)  
+[WheelLED-Wearable](https://github.com/KitSprout/WheelLED/tree/master/Software/WheelLED-Wearable)  
+
+Mechanical
+========
+[thingiverse]http://www.thingiverse.com/thing:1054831
 
 View
 ========
-
-Config
-========
+<img src="https://lh3.googleusercontent.com/-QG3mfNWB-O8/Vh6NQxQ9gaI/AAAAAAAAOTI/E2Qb0Dh7n64/s800-Ic42/DSC_0035.jpg" />
 
 Schematic
 ========

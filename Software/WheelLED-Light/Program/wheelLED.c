@@ -20,7 +20,7 @@
 #define UARTx_RX_GPIO_CLK_ENABLE()  __HAL_RCC_GPIOA_CLK_ENABLE()
 #define UARTx_RX_AF                 GPIO_AF1_USART1
 
-#define UARTx_BAUDRATE              921600
+#define UARTx_BAUDRATE              460800
 #define UARTx_BYTESIZE              UART_WORDLENGTH_8B
 #define UARTx_STOPBITS              UART_STOPBITS_1
 #define UARTx_PARITY                UART_PARITY_NONE
@@ -32,7 +32,7 @@
 static UART_HandleTypeDef WLED_UART_HandleStruct;
 
 __IO uint8_t  WheelLED_Mode     = WLED_MODE_RUN;
-__IO uint8_t  WheelLED_address  = WLED_ADDR2;
+__IO uint8_t  WheelLED_address  = WLED_ADDR1;
 __IO uint32_t WheelLED_baudrate = UARTx_BAUDRATE;
 
 __IO uint8_t WLED_Flag_addressUpdate = RESET;
@@ -113,7 +113,7 @@ static void WheelLED_PWM_Config( void )
   TIM_HandleStruct.Init.RepetitionCounter = 0;
   HAL_TIM_PWM_Init(&TIM_HandleStruct);
 
-  TIM_OC_InitStruct.OCMode       = TIM_OCMODE_PWM1;
+  TIM_OC_InitStruct.OCMode       = TIM_OCMODE_PWM2;
   TIM_OC_InitStruct.OCFastMode   = TIM_OCFAST_DISABLE;
   TIM_OC_InitStruct.OCPolarity   = TIM_OCPOLARITY_LOW;
   TIM_OC_InitStruct.OCNPolarity  = TIM_OCPOLARITY_LOW;
@@ -181,6 +181,9 @@ static void WheelLED_UART_Config( void )
   GPIO_InitStruct.Pin       = UARTx_TX_PIN;
   GPIO_InitStruct.Alternate = UARTx_TX_AF;
   HAL_GPIO_Init(UARTx_TX_GPIO_PORT, &GPIO_InitStruct);
+
+//  GPIO_InitStruct.Mode      = GPIO_MODE_AF_OD;
+//  GPIO_InitStruct.Pull      = GPIO_PULLUP;
 
   GPIO_InitStruct.Pin       = UARTx_RX_PIN;
   GPIO_InitStruct.Alternate = UARTx_RX_AF;

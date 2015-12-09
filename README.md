@@ -38,8 +38,10 @@ Mechanical
 
 View
 ========
-<img src="https://lh3.googleusercontent.com/-QG3mfNWB-O8/Vh6NQxQ9gaI/AAAAAAAAOTI/E2Qb0Dh7n64/s800-Ic42/DSC_0035.jpg" />
-Youtube Video : https://youtu.be/vz7iMQQ5Icc
+<img src="https://lh3.googleusercontent.com/-QG3mfNWB-O8/Vh6NQxQ9gaI/AAAAAAAAOTI/E2Qb0Dh7n64/s800-Ic42/DSC_0035.jpg" />  
+
+[Youtube - [2015.10.14] 自行車照明 WheelLED 上路測試](https://www.youtube.com/watch?v=vz7iMQQ5Icc)  
+[Youtube - [2015.10.16] 自行車照明 WheelLED 功能介紹](https://www.youtube.com/watch?v=yA1cAoSKX-s)  
 
 Schematic
 ========
